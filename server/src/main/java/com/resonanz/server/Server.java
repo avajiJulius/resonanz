@@ -12,7 +12,7 @@ import io.netty.handler.ssl.util.SelfSignedCertificate;
 
 public class Server {
 
-    private static final int SERVER_PORT = 8181;
+    private static final int SERVER_PORT = Integer.parseInt(System.getProperty("port", "8181"));
     private static Server server;
     private static SslContext context;
     private static EventLoopGroup bossGroup;

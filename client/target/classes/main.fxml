@@ -12,7 +12,7 @@
 
     <TextArea fx:id="mainArea" editable="false" VBox.vgrow="ALWAYS"></TextArea>
     <HBox>
-        <TextField fx:id="messageField" HBox.hgrow="ALWAYS" ></TextField>
-        <Button text="Send" />
+        <TextField fx:id="messageField" HBox.hgrow="ALWAYS" onAction="#sendMessage"></TextField>
+        <Button text="Send" onAction="#sendMessage"/>
     </HBox>
 </VBox>
